@@ -1,0 +1,103 @@
+.service {
+    width: 100%;
+    padding: 3rem 0;
+}
+
+.service .container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1rem;
+    padding: 0 1rem;
+    text-align: justify;
+}
+
+.service-col-2 {
+    display: flex;
+    justify-content: space-between; /* Ensures even spacing between boxes */
+    align-items: center; /* Aligns items vertically in the center */
+    padding: 2rem 0;
+}
+
+.service .box {
+    flex: 1; /* Ensures boxes take up equal space */
+    margin: 0 1rem; /* Adds spacing between the boxes */
+    text-align: center;
+}
+
+.service .box img {
+    max-width: 100%; /* Ensures image fits within the container */
+    height: auto;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.promo {
+    width: 100%;
+    margin: .4rem 0;
+    margin-bottom: 4rem;
+    border: 1px solid #333;
+    text-align: center;
+}
+
+.promo h4 {
+    font-size: 1.6rem;
+    color: var(--primary-dark);
+}
+
+.promo .para {
+    padding: 1rem 0;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.service form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-wrap {
+    margin: .4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.service input, select {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+.service .date {
+    display: flex;
+}
+
+.service button {
+    margin: .4rem;
+}
+
+
+@media screen and (max-width: 940px) {
+    .service .container {
+        grid-template-columns: 1fr;
+    }
+
+    .service-col-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .service .right {
+        max-width: 100%;
+    }
+
+    .service form {
+        width: 100%;
+    }
+
+    .service .date {
+        flex-direction: column;
+    }
+}
